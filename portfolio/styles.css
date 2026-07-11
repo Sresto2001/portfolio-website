@@ -151,3 +151,39 @@ ul li a{
 .what-i-do-card h2{
     margin: 10px;
 }
+
+
+
+/*---------amazing work section----*/
+
+.amazing-parent{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery{
+    max-width: 1200px;
+    margin: 20px auto 0;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas:
+    'one two three'
+    'four two six'
+    'four five six';
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px; /* optional polish, matches your rounded-corner theme elsewhere */
+}
+
+.box-1{ grid-area: one; }
+.box-2{ grid-area: two; }
+.box-3{ grid-area: three; }
+.box-4{ grid-area: four; }
+.box-5{ grid-area: five; }
+.box-6{ grid-area: six; }
